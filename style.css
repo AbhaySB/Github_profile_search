@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: white;
+    font-family: "Oswald";
+    font-size: 70.5%;
+    background-image: linear-gradient(to right, rgb(101, 5, 101), rgb(185, 83, 185), rgb(200, 132, 143));
+
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.container h1{
+    display: flex;
+}
+
+.container h1 img{
+       display: flex;
+      height: 5.5rem;
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    max-width: 60rem;
+}
+
+.search input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: none;
+}
+
+
+.primary-btn {
+    background: purple;
+    color: aliceblue;
+    padding: 1rem 1rem;
+    /* margin-left: 0.5rem; */
+    border: none;
+}
+
+.primary-btn:hover {
+    background: rgb(97, 3, 97);
+}
+
+.primary-btn:active {
+    background: rgb(155, 11, 155);
+}
+
+/* card */
+
+#profile-container{
+    width: 100%;
+}
+
+
+.profile-box {
+    margin: auto;
+    background-image: linear-gradient(to right, rgb(200, 132, 143), rgb(185, 83, 185), rgb(159, 7, 159));
+    padding: 4rem 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 78rem;
+    transition: 0.5s ease-in;
+    color: white;
+}
+
+.profile-box:hover {
+    transform: rotate(-2deg) scale(1.01);
+    transition: 0.5s ease-in;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section button {
+    align-self: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left h1 {
+    font-size: 1.6rem;
+}
+
+.avatar {
+    height: 10rem;
+    width: 10rem;
+    /* border-radius: 50%; */
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about {
+    margin: 2rem;
+}
+
+.status {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
